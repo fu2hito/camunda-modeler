@@ -6,6 +6,11 @@ An integrated modeling solution for BPMN, DMN, and Forms based on [bpmn.io](http
 
 ![Camunda Modeler](resources/screenshot.png)
 
+## About this repo
+
+* [bpmn-js i18n Example](https://github.com/bpmn-io/bpmn-js-examples/tree/main/i18n)
+* [bpmn-js translations](https://github.com/bpmn-io/bpmn-js-i18n)
+
 ## Resources
 
 * [Changelog](./CHANGELOG.md)
