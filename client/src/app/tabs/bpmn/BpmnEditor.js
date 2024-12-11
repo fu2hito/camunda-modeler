@@ -867,6 +867,11 @@ export class BpmnEditor extends CachedComponent {
       );
     }
 
+    // https://github.com/bpmn-io/bpmn-js-examples/tree/main/i18n
+    var customTranslate = {
+      translate: [ 'value', require('./custom-translate/custom-translate')]
+    }
+
     const modeler = new BpmnModeler({
       ...options,
       position: 'absolute',
@@ -879,7 +884,11 @@ export class BpmnEditor extends CachedComponent {
       },
       keyboard: {
         bind: false
-      }
+      },
+      // https://github.com/bpmn-io/bpmn-js-examples/tree/main/i18n
+      additionalModules: [
+        customTranslate
+      ]
     });
 
     const commandStack = modeler.get('commandStack');
