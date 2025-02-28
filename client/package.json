@@ -1,6 +1,6 @@
 {
   "name": "camunda-modeler-client",
-  "version": "5.33.0",
+  "version": "5.34.0-dev",
   "description": "Camunda Modeler client application",
   "private": true,
   "license": "MIT",
@@ -116,7 +116,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack --watch --config ./webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack",
-    "postbuild": "del-cli --force ../app/public && mv build ../app/public",
+    "postbuild": "del-cli --force ../app/public && xcopy \"build\" \"../app/public\" /E /I /Y",
     "dev": "run-s start",
     "auto-test": "npm test -- --auto-watch --no-single-run",
     "test": "karma start karma.config.js",
