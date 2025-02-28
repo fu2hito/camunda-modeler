@@ -1,0 +1,6 @@
+[submodule "resources/translations"]
+	path = resources/translations
+	url = https://github.com/bpmn-io/bpmn-js-i18n.git
+[submodule "resources/i18n-plugin"]
+	path = resources/i18n-plugin
+	url = https://github.com/fu2hito/camunda-modeler-i18n-plugin.git
